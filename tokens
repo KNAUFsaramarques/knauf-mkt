@@ -1,0 +1,719 @@
+///////////// Structure /////////////
+
+const ref = { }
+const MarketingDialect =  { }
+const ProDialect = { }
+const tokens = {
+  ref,
+  MarketingDialect,
+  ProDialect
+};
+export default tokens;
+
+
+/////////////
+
+
+const ref = {
+  ///////////// Typography /////////////
+  letterSpacing: {
+    "0": {
+      value: "0%",
+      type: "letterSpacing"
+    },
+    "3": {
+      value: "3%",
+      type: "letterSpacing"
+    }
+  },
+  
+
+  paragraphSpacing: { // It should be the same that the font-size
+    "64": {
+      value: "64",
+      type: "paragraphSpacing"
+    },
+    "48": {
+      value: "48",
+      type: "paragraphSpacing"
+    },
+    "36": {
+      value: "36",
+      type: "paragraphSpacing"
+    },
+    "32": {
+      value: "32",
+      type: "paragraphSpacing"
+    },
+    "28": {
+      value: "28",
+      type: "paragraphSpacing"
+    },
+    "24": {
+      value: "24",
+      type: "paragraphSpacing"
+    },
+    "20": {
+      value: "20",
+      type: "paragraphSpacing"
+    },
+    "16": {
+      value: "16",
+      type: "paragraphSpacing"
+    },
+    "14": {
+      value: "14",
+      type: "paragraphSpacing"
+    },
+    "12": {
+      value: "12",
+      type: "paragraphSpacing"
+    },
+    "11": {
+      value: "11",
+      type: "paragraphSpacing"
+    },
+    
+
+  fontWeights: {
+    bold: {
+      value: "Bold",
+      type: "fontWeights"
+    },
+    semibold: {
+      value: "SemiBold",
+      type: "fontWeights"
+    },
+    medium: {
+      value: "Medium",
+      type: "fontWeights"
+    },
+    regular: {
+      value: "Regular",
+      type: "fontWeights"
+    }
+    italic: {
+      value: "Italic",
+      type: "fontWeights"
+    }
+  },
+  boldItalic: {
+    value: "BoldItalic",
+    type: "fontWeights"
+  }
+},
+
+
+  lineHeights: { // TBD > To be specified in %
+    "125": {
+      value: "125%",
+      type: "lineHeights"
+    },
+    "150": {
+      value: "150%",
+      type: "lineHeights"
+    }
+  },
+
+
+  fontSizes: {
+    "11": {
+      value: "11",
+      type: "fontSizes"
+    },
+    "12": {
+      value: "12",
+      type: "fontSizes"
+    },
+    "14": {
+      value: "14",
+      type: "fontSizes"
+    },
+    "16": {
+      value: "16",
+      type: "fontSizes"
+    },
+    "18": {
+      value: "18",
+      type: "fontSizes"
+    },
+    "20": {
+      value: "20",
+      type: "fontSizes"
+    },
+    "24": {
+      value: "24",
+      type: "fontSizes"
+    },
+    "28": {
+      value: "28",
+      type: "fontSizes"
+    },
+    "32": {
+      value: "32",
+      type: "fontSizes"
+    },
+    "36": {
+      value: "36",
+      type: "fontSizes"
+    }
+  },
+    "48": {
+      value: "48",
+      type: "fontSizes"
+    },
+    "64": {
+      value: "64",
+      type: "fontSizes"
+    },
+
+
+ typescale: {
+    "display-l": {
+      value: {
+        fontFamily: "{fontFamilies.brand}",
+        fontWeight: "{fontWeights.Medium}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.64}",
+        letterSpacing: "{letterSpacing.3}",
+        paragraphSpacing: "{paragraphSpacing.64}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "display-m": {
+      value: {
+        fontFamily: "{fontFamilies.brand}",
+        fontWeight: "{fontWeights.Medium}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.48}",
+        letterSpacing: "{letterSpacing.3}",
+        paragraphSpacing: "{paragraphSpacing.48}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "display-s": {
+      value: {
+        fontFamily: "{fontFamilies.brand}",
+        fontWeight: "{fontWeights.Medium}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.36}",
+        letterSpacing: "{letterSpacing.3}",
+        paragraphSpacing: "{paragraphSpacing.36}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "headline-l": {
+      value: {
+        fontFamily: "{fontFamilies.brand}",
+        fontWeight: "{fontWeights.Medium}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.32}",
+        letterSpacing: "{letterSpacing.3}",
+        paragraphSpacing: "{paragraphSpacing.32}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "display-m": {
+      value: {
+        fontFamily: "{fontFamilies.brand}",
+        fontWeight: "{fontWeights.Medium}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.28}",
+        letterSpacing: "{letterSpacing.3}",
+        paragraphSpacing: "{paragraphSpacing.28}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "display-s": {
+      value: {
+        fontFamily: "{fontFamilies.brand}",
+        fontWeight: "{fontWeights.Medium}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.24}",
+        letterSpacing: "{letterSpacing.3}",
+        paragraphSpacing: "{paragraphSpacing.24}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "title-l": {
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        fontWeight: "{fontWeights.Bold}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.20}",
+        letterSpacing: "{letterSpacing.0}",
+        paragraphSpacing: "{paragraphSpacing.20}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "title-m": {
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        fontWeight: "{fontWeights.Bold}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.20}",
+        letterSpacing: "{letterSpacing.0}",
+        paragraphSpacing: "{paragraphSpacing.20}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "title-m": {
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        fontWeight: "{fontWeights.Bold}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.16}",
+        letterSpacing: "{letterSpacing.0}",
+        paragraphSpacing: "{paragraphSpacing.16}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "title-s": {
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        fontWeight: "{fontWeights.Bold}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.14}",
+        letterSpacing: "{letterSpacing.0}",
+        paragraphSpacing: "{paragraphSpacing.14}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "label-l": {
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        fontWeight: "{fontWeights.SemiBold}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.14}",
+        letterSpacing: "{letterSpacing.3}",
+        paragraphSpacing: "{paragraphSpacing.14}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "label-m": {
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        fontWeight: "{fontWeights.SemiBold}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.12}",
+        letterSpacing: "{letterSpacing.3}",
+        paragraphSpacing: "{paragraphSpacing.12}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "label-s": {
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        fontWeight: "{fontWeights.SemiBold}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.11}",
+        letterSpacing: "{letterSpacing.3}",
+        paragraphSpacing: "{paragraphSpacing.11}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "body": { // Should we delete the common features for "body" in the following variants?
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        letterSpacing: "{letterSpacing.0}",
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "body-l": {
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        fontWeight: "{fontWeights.Regular}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.16}",
+        letterSpacing: "{letterSpacing.0}",
+        paragraphSpacing: "{paragraphSpacing.16}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "body-l-italic": {
+      value: {
+        fontWeight: "{fontWeights.Italic}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.16}",
+        letterSpacing: "{letterSpacing.0}",
+        paragraphSpacing: "{paragraphSpacing.16}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "body-l-bold": {
+      value: {
+        fontWeight: "{fontWeights.Bold}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.16}",
+        letterSpacing: "{letterSpacing.0}",
+        paragraphSpacing: "{paragraphSpacing.16}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "body-l-boldItalic": {
+      value: {
+        fontWeight: "{fontWeights.BoldItalic}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.16}",
+        letterSpacing: "{letterSpacing.0}",
+        paragraphSpacing: "{paragraphSpacing.16}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "body-m": {
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        fontWeight: "{fontWeights.Regular}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.14}",
+        letterSpacing: "{letterSpacing.0}",
+        paragraphSpacing: "{paragraphSpacing.14}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "body-m-italic": {
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        fontWeight: "{fontWeights.Italic}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.14}",
+        letterSpacing: "{letterSpacing.0}",
+        paragraphSpacing: "{paragraphSpacing.14}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "body-m-bold": {
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        fontWeight: "{fontWeights.Bold}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.14}",
+        letterSpacing: "{letterSpacing.0}",
+        paragraphSpacing: "{paragraphSpacing.14}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "body-m-boldItalic": {
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        fontWeight: "{fontWeights.BoldItalic}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.14}",
+        letterSpacing: "{letterSpacing.0}",
+        paragraphSpacing: "{paragraphSpacing.14}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "body-s": {
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        fontWeight: "{fontWeights.Regular}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.12}",
+        letterSpacing: "{letterSpacing.0}",
+        paragraphSpacing: "{paragraphSpacing.12}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+    "body-s-bold": {
+      value: {
+        fontFamily: "{fontFamilies.secondary}",
+        fontWeight: "{fontWeights.Bold}",
+        lineHeight: "{lineHeights.125}", // To be specified
+        fontSize: "{fontSize.12}",
+        letterSpacing: "{letterSpacing.0}",
+        paragraphSpacing: "{paragraphSpacing.12}"
+      },
+      type: "typography",
+      description: "Use this for the second most important thing on the page"
+    },
+
+
+    fontFamilies: {
+      brand: {
+        value: "Futura PT",
+        type: "fontFamilies"
+      },
+      secondary: {
+        value: "Open Sans",
+        type: "fontFamilies"
+      },
+
+  
+      ///////////// Color /////////////
+    colorScales: {
+      // Primary (Blue)
+      B0PrussianBlue: {
+        value: "#004969",
+        type: "color"
+      },
+      B10IndigoBlue: {
+        value: "#006691",
+        type: "color"
+      },
+      B20ClassicBlue: {
+        value: "#0082BA",
+        type: "color"
+      },
+      B30TrueBlue: // Knauf brand color
+        { value: "#009FE3",
+          type: "color"
+        },
+      B40ElectricBlue: {
+        value: "#16B9FF",
+        type: "color"
+      },
+      B50SkyBlue: {
+        value: "#40C5FF",
+        type: "color"
+      },
+      B60LightBlue: {
+        value: "#6AD2FF",
+        type: "color"
+      },
+      B70ChildhoodBlue: {
+        value: "#93DFFF",
+        type: "color"
+      },
+      B80WashedBlue: {
+        value: "#BDEBFF",
+        type: "color"
+      },
+      B90BabyBlue: {
+        value: "#E7F8FF",
+        type: "color"
+      },
+      B100AliceBlue: {
+        value: "#FAFEFF",
+        type: "color"
+      },
+      B101WhiteSnow: {
+        value: "#FFFFFF",
+        type: "color"
+      },
+
+    // Secondary (Emerald)
+    E0PhthaloGreen: {
+      value: "#124B37",
+      type: "color"
+    },
+    E10BrunswickGreen: {
+      value: "#1D684D",
+      type: "color"
+    },
+    E20PineGreen: {
+      value: "#298665",
+      type: "color"
+    },
+    E30JungleGreen: {
+      value: "#38A37D",
+      type: "color"
+    },
+    E40EmeraldGreen: {
+      value: "#38A37D",
+      type: "color"
+    },
+    E50MossGreen: {
+      value: "#49C095",
+      type: "color"
+    },
+    E60SeaGreen: {
+      value: "#71FAC9",
+      type: "color"
+    },
+    E70MintGreen: {
+      value: "#9DFFDC",
+      type: "color"
+    },
+    E80BabyGreen: {
+      value: "#C7FFEB",
+      type: "color"
+    },
+    E90LightGreen: {
+      value: "#F1FFFA",
+      type: "color"
+    },
+    E100WashedLightGreen: {
+      value: "#F8FFFC",
+      type: "color"
+    },
+    E101WashedGreen: {
+      value: "#FBFFFD",
+      type: "color"
+    },
+
+    // Dark (Blue-Grayscale)
+    BG0DarkBlue: // Knauf dark blue color
+      {
+        value: "#001A4C",
+        type: "color"
+      },
+    BG10MidnightDarkBlue: {
+        value: "#1A315E",
+        type: "color"
+      },
+    BG20IndepenceDarkBlue: {
+      value: "#334870",
+      type: "color"
+    },
+    BG30CobaltGray: {
+      value: "#4D5F82",
+      type: "color"
+    },
+    BG40SlateGray: {
+      value: "#667694",
+      type: "color"
+    },
+    BG50AsphaltGray: {
+      value: "#808CA5",
+      type: "color"
+    },
+    BG60PlasterGray: {
+      value: "#99A3B7",
+      type: "color"
+    },
+    BG70CloudySkyGray: {
+      value: "#B3BAC9",
+      type: "color"
+    },
+    BG80SilverGray: {
+      value: "#CCD1DB",
+      type: "color"
+    },
+    BG90StoneGray: {
+      value: "#E6E8ED",
+      type: "color"
+    },
+    BG100SmoothGray: {
+      value: "#F2F4F6",
+      type: "color"
+    },
+    BG101WashedLightGray: {
+      value: "#FAFAFB",
+      type: "color"
+    },
+
+    // Danger (Red)
+    R0BurgundyRed: {
+      value: "#BD0000",
+      type: "color"
+    },
+    R10DangerRed: {
+      value: "#F00000",
+      type: "color"
+    },
+    R20LipstickRed: {
+      value: "#F44040",
+      type: "color"
+    },
+    R30SalmonRed: {
+      value: "#F88C8C",
+      type: "color"
+    },
+    R40RoseRed: {
+      value: "#FDD9D9",
+      type: "color"
+    },
+    R50BabyRoseRed: {
+      value: "#FEF2F2",
+      type: "color"
+    },
+
+    // Warning (Yellow)
+    Y0GoldYellow: {
+      value: "#BB8704",
+      type: "color"
+    },
+    Y10MoustardYellow: {
+      value: "#FBC02D",
+      type: "color"
+    },
+    Y20EggYellow: {
+      value: "#FCD062",
+      type: "color"
+    },
+    Y30LeafYellow: {
+      value: "#FDE3A0",
+      type: "color"
+    },
+    Y40BabyYellow: {
+      value: "#FEF6E0",
+      type: "color"
+    },
+    Y50LightYellow: {
+      value: "#FFFCF4",
+      type: "color"
+    },
+
+   // Success (Green)
+    G0ForestGreen: {
+      value: "#086D0D",
+      type: "color"
+    },
+    G10GrassGreen: {
+      value: "#0C8011",
+      type: "color"
+    },
+    G20OliveGreen: {
+      value: "#49A04D",
+      type: "color"
+    },
+    G30BabyGreen: {
+      value: "#C2DFC3",
+      type: "color"
+    },
+    G40TeaGreen: {
+      value: "#DBECDC",
+      type: "color"
+    },
+    G50LightGreen: {
+      value: "#F3F9F3",
+      type: "color"
+    },
+
+   // Gradients
+    gradientOverlay: {
+      value: "linear-gradient(92.52deg, rgba(0, 26, 76, 0.55) 1.79%, rgba(0, 26, 76, 0.326562) 31.24%, rgba(0, 26, 76, 0) 74.29%)",
+      type: "color"
+    }
+    gradientBlue: {
+      value: "conic-gradient(from 160.5deg at 73.84% 65%, #8CD4F2 -43.13deg, #F2FAFE 50.63deg, #F2FAFE 148.13deg, #8CD4F2 316.87deg, #F2FAFE 410.62deg)",
+      type: "color"
+    }
+    gradientGray: {
+      value: "onic-gradient(from 143.82deg at 71.6% 59.8%, #F2F4F6 0deg, rgba(242, 244, 246, 0) 360deg)",
+      type: "color"
+    }
+};
+
+const MarketingDialect =  { }
+const ProDialect = { }
+const tokens = {
+  ref,
+  MarketingDialect,
+  ProDialect
+};
+export default tokens;
